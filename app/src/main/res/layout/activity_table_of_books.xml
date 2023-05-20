@@ -21,11 +21,12 @@
             android:textDirection="anyRtl">
 
             <EditText
-                android:id="@+id/numofbooking"
+                android:id="@+id/ID_TRAVEL"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text=""
                 android:textSize="20dp" />
@@ -50,11 +51,12 @@
             android:textDirection="anyRtl">
 
             <EditText
-                android:id="@+id/From"
+                android:id="@+id/FROM"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text=""
                 android:textSize="20dp" />
@@ -79,11 +81,12 @@
             android:textDirection="anyRtl">
 
             <EditText
-                android:id="@+id/To"
+                android:id="@+id/TO"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text=""
                 android:textSize="20dp" />
@@ -109,11 +112,12 @@
             android:textDirection="anyRtl">
 
             <EditText
-                android:id="@+id/takeoff"
+                android:id="@+id/TAKE_OFF"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text=""
                 android:textSize="20dp" />
@@ -138,11 +142,12 @@
             android:textDirection="anyRtl">
 
             <EditText
-                android:id="@+id/land"
+                android:id="@+id/LANDING"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text=""
                 android:textSize="20dp" />
@@ -167,11 +172,12 @@
             android:textDirection="anyRtl">
 
             <EditText
-                android:id="@+id/Price"
+                android:id="@+id/PRICE"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName"
                 android:text=""
                 android:textSize="20dp" />

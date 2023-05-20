@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.booking_airline_tickets" >
+    package="com.example.booking_airline_tickets">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,39 +16,70 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Booking_airline_tickets"
-        tools:targetApi="32" >
-        <activity
+        tools:targetApi="32">
 
-            android:name=".tableOfBooks"
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDnX5PidnAT3tJ7DLBGpzCXPkVQxJiRDiQ" />
+
+        <activity
+            android:name=".MapActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".Contact"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".cancelReservation"
             android:exported="false" />
         <activity
-            android:name=".show"
-            android:exported="true" >
-=======
-            android:name=".login"
+            android:name=".about_us"
             android:exported="false" />
         <activity
-            android:name=".signup"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Home"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="false" >
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+            android:name=".tableOfBooks"
+            android:exported="false" />
+        <activity
+            android:name=".show"
+            android:exported="true" />
+        <activity
+            android:name=".Booking"
+            android:exported="false">
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
         </activity>
+        <activity
+            android:name=".login"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Book"
+            android:exported="false" />
     </application>
 
 </manifest>
